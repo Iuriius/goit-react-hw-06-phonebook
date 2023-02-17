@@ -14,6 +14,7 @@ const useFilterArray = (array, filter) => {
 export const ContactsList = () => {
   const { contacts } = useSelector(contactSelector);
   const { filter } = useSelector(filterSelector);
+  // console.log(filter);
   const contactsList = useFilterArray(contacts, filter);
 
   return (
